@@ -1,0 +1,27 @@
+<html>
+<body>
+    <script>
+        function leapyear(year){
+            if(year % 4 ===0)
+            {
+                if(year % 100 ===0)
+                {
+                    if(year % 400 ===0)
+                    {
+                        return "leap year ";
+                    }else{
+                        return "not leap year";
+                    }
+                }
+                else{
+                    return "leap year";
+                }
+            }else{
+                return "not leap year";
+            }
+        }
+        year = prompt("Enter Year to check if its leap year");
+        alert(leapyear(year));
+    </script>
+</body>
+</html>
